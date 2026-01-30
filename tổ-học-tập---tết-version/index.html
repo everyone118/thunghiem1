@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tổ Học Tập - Xuân Bính Ngọ 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            overflow-x: hidden;
+            background: #fff8e1;
+        }
+
+        .tet-gradient {
+            background: linear-gradient(135deg, #fff8e1 0%, #ffe6b3 50%, #c8102e 100%);
+        }
+
+        @keyframes fall {
+            0% { transform: translateY(-10vh) rotate(0deg) translateX(0); opacity: 1; }
+            100% { transform: translateY(110vh) rotate(720deg) translateX(50px); opacity: 0; }
+        }
+
+        .petal {
+            position: fixed;
+            pointer-events: none;
+            z-index: 5;
+            animation: fall linear infinite;
+        }
+
+        @keyframes swing {
+            from { transform: rotate(-12deg); }
+            to { transform: rotate(12deg); }
+        }
+
+        .lantern-swing {
+            transform-origin: top center;
+            animation: swing 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes light-flicker {
+            from { opacity: 0.7; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1.05); }
+        }
+
+        .flicker {
+            animation: light-flicker 1.5s infinite alternate;
+        }
+
+        .dragon-frame {
+            mask-image: linear-gradient(to bottom, black, transparent);
+            -webkit-mask-image: linear-gradient(to bottom, black, transparent);
+        }
+
+        .glass-header {
+            background: rgba(200, 16, 46, 0.9);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
