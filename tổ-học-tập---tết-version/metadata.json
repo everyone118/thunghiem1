@@ -1,9 +1,0 @@
-
-{
-  "name": "Tổ Học Tập - Tết Version",
-  "description": "A vibrant study group portal with a Vietnamese Lunar New Year theme, featuring member profiles and an AI-powered study mentor.",
-  "requestFramePermissions": [
-    "camera",
-    "microphone"
-  ]
-}
